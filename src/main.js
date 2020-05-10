@@ -1,7 +1,7 @@
-import App from './App.svelte';
+import Mind from './Mind.svelte';
 
-const app = new App({
+const mind = new Mind({
 	target: document.body,
 });
 
-export default app;
+export default mind;

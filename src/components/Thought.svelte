@@ -1,9 +1,14 @@
-<script>
-    import Memory from './Memory.svelte';
+<div>
+    <slot/>
+</div>
 
-    export let words;
-</script>
+<style>
+    div {
+        all: unset;
+        width: 100%;
+    }
 
-<Memory>
-    <p> { words } </p>
-</Memory>
+    div:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+</style>

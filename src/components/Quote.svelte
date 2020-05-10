@@ -1,17 +1,24 @@
 <script>
-    import Memory from './Memory.svelte';
+    import Thought from './Thought.svelte';
 
     export let words;
     export let author;
 </script>
 
-<Memory>
+<Thought>
     <blockquote> { words } </blockquote>
     <dd> { author } </dd>
-</Memory>
+</Thought>
 
 <style>
+    blockquote {
+        font-size: 27px;
+        margin-bottom: 0.5rem;
+    }
+
     dd {
         text-align: right;
+
+        font-size: 21px;
     }
 </style>

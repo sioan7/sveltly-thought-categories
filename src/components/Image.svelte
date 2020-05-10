@@ -1,13 +1,13 @@
 <script>
-    import Memory from './Memory.svelte';
+    import Thought from './Thought.svelte';
 
     export let source;
     export let explanation;
 </script>
 
-<Memory>
+<Thought>
     <img src={source} alt={explanation} title={explanation}>
-</Memory>
+</Thought>
 
 <style>
     img {
@@ -15,6 +15,6 @@
         margin: auto;
 
         max-width: 77%;
-        max-height: 77vh;
+        max-height: 57vh;
     }
 </style>

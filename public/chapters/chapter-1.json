@@ -1,16 +1,16 @@
 {
-    "title": "Chapter #1 - The \"why\"",
-    "memories": [
+    "title": "#1 - The \"why\"",
+    "thoughts": [
         {
-            "type": "thought",
+            "type": "opinion",
             "words": "I have so many thoughts, maybe too many, and I never knew how to represent them. I can lay them down as words, I can captures them as pictures, I can express them through someone else's words as quotes, I can vibrate them as music, I can combine pictures and sounds into a video and let it play."
         },
         {
-            "type": "thought",
+            "type": "opinion",
             "words": "There's so many possibilites and I'm not particulary good at any of them. But I am a programmer, a software engineer if I were to lay down my full title, as the modest man I am. What I know best is to express my ideas in code, I worked for years to improve my skills. So I decided to give it a try and combine every means of expression I am able to use into a single piece, held together by CODE."
         },
         {
-            "type": "thought",
+            "type": "opinion",
             "words": "I like to take pictures and I like even more to edit them and turn them into a most accurate expression of something I want to convey, even if that meaning is understood by no one but myself."
         },
         {
@@ -19,8 +19,13 @@
             "explanation": "Purple rain over Amsterdam"
         },
         {
-            "type": "thought",
-            "words": "I like to listen to other people's thougths and analyze them, record them, and integrate them into my own being."
+            "type": "image",
+            "source": "/img/DSCF1286.jpg",
+            "explanation": "Overreaching sun during sunset"
+        },
+        {
+            "type": "opinion",
+            "words": "I like to listen to other people's thougths and analyze them, record them, and carefully integrate them into my own being."
         },
         {
             "type": "quote",

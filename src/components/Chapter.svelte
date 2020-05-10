@@ -2,7 +2,7 @@
     import { onMount } from 'svelte';
 
     import Page from './Page.svelte';
-    import Thought from './Thought.svelte';
+    import Opinion from './Opinion.svelte';
     import Quote from './Quote.svelte';
     import Image from './Image.svelte';
 
@@ -21,9 +21,9 @@
 
 <Page remembered={remembered}>
     <h1> { chapter.title } </h1>
-    {#each chapter.memories as { type, ...memory }}
-        {#if type === 'thought'}
-            <Thought {...memory} />
+    {#each chapter.thoughts as { type, ...memory }}
+        {#if type === 'opinion'}
+            <Opinion {...memory} />
         {:else if type === 'quote'}
             <Quote {...memory} />
         {:else if type === 'image'}
@@ -31,3 +31,9 @@
         {/if}
     {/each}
 </Page>
+
+<style>
+    h1 {
+        font-size: 37px;
+    }
+</style>
