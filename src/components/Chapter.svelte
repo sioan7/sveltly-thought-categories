@@ -3,6 +3,7 @@
 
     import Page from './Page.svelte';
     import Opinion from './Opinion.svelte';
+    import Idea from './Idea.svelte';
     import Quote from './Quote.svelte';
     import Image from './Image.svelte';
 
@@ -24,6 +25,8 @@
     {#each chapter.thoughts as { type, ...memory }}
         {#if type === 'opinion'}
             <Opinion {...memory} />
+        {:else if type === 'idea'}
+            <Idea {...memory} />
         {:else if type === 'quote'}
             <Quote {...memory} />
         {:else if type === 'image'}

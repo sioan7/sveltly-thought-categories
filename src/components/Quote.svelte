@@ -1,14 +1,14 @@
 <script>
-    import Thought from './Thought.svelte';
+    import Memory from './Memory.svelte';
 
     export let words;
     export let author;
 </script>
 
-<Thought>
+<Memory>
     <blockquote> { words } </blockquote>
     <dd> { author } </dd>
-</Thought>
+</Memory>
 
 <style>
     blockquote {
