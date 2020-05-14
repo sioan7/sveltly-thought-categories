@@ -12,7 +12,7 @@
 <style>
     img {
         display: block;
-        margin: auto;
+        margin: 1rem auto;
 
         max-width: 77%;
         max-height: 57vh;

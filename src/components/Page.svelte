@@ -1,11 +1,5 @@
-<script>
-    export let remembered;
-</script>
-
 <main>
-    {#if remembered}
-        <slot></slot>
-    {/if}
+    <slot />
 </main>
 
 <style>

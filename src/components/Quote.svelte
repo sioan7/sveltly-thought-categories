@@ -18,7 +18,6 @@
 
     dd {
         text-align: right;
-
         font-size: 21px;
     }
 </style>
