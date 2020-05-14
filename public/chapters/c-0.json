@@ -1,0 +1,28 @@
+[
+    {
+        "#": "0",
+        "title": "Representation"
+    },
+    {
+        "type": "idea",
+        "words": "How do I represent my thoughts?"
+    },
+    {
+        "type": "opinion",
+        "words": "I can write them down as words, capture them as pictures or videos, play them as music, sculpt them as statues, compile them as quotes, or any other form of representation."
+    },
+    {
+        "type": "idea",
+        "words": "So what do I choose?"
+    },
+    {
+        "type": "image",
+        "source": "/img/DSCF1110.jpg",
+        "explanation": "Purple rain over Amsterdam"
+    },
+    {
+        "type": "image",
+        "source": "/img/DSCF1286.jpg",
+        "explanation": "Overreaching sun during sunset"
+    }
+]

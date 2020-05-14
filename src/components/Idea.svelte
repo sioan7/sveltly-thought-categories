@@ -1,11 +1,14 @@
 <script>
     import Thought from './Thought.svelte';
 
-    export let words;
+    export let words = '';
 </script>
 
 <Thought>
-    <p> { words } </p>
+    <p>
+        { words }
+        <slot />
+    </p>
 </Thought>
 
 <style>

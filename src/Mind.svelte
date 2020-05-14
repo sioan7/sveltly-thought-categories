@@ -2,4 +2,4 @@
     import First from './chapters/First.svelte';
 </script>
 
-<First />
+<First order={0} />

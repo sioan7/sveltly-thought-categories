@@ -10,37 +10,26 @@
 
     import { rememberChapter } from '../api/memory';
 
-    export let name;
+    export let trigger = null;
+    export let title = null;
 
-    const dispatch = createEventDispatcher();
-    const chapterPromise = rememberChapter(name).then((chapter) => {
-        dispatch('remember', chapter);
-        return chapter;
-    });
-    
+    const cleanThoughts = (thoughts) => thoughts.filter(x => x.type).map(x => delete x.type && x);
 </script>
 
-{#await chapterPromise}
-    <h2>Loading chapter...</h2>
-{:then chapter}
-    <Page>
-        <h1> { chapter.title } </h1>
-        {#each chapter.thoughts as { type, ...memory }}
-            {#if type === 'opinion'}
-                <Opinion { ...memory } />
-            {:else if type === 'idea'}
-                <Idea { ...memory } />
-            {:else if type === 'quote'}
-                <Quote { ...memory } />
-            {:else if type === 'image'}
-                <Image { ...memory } />
-            {/if}
-        {/each}
+<Page>
+    <h1> { title } </h1>
+    {#if trigger}
+        {#await rememberChapter(trigger)}
+            <h2> Remembering chapter... </h2>
+        {:then thoughts}
+            <slot thoughts={ cleanThoughts(thoughts) }/>
+        {:catch error}
+            <h2> Failed to remember chapter 😞 because { error.message } </h2>
+        {/await}
+    {:else}
         <slot />
-    </Page>
-{:catch error}
-    <h2>Failed to remember chapter 😞</h2>
-{/await}
+    {/if}
+</Page>
 
 <style>
     h1 {
